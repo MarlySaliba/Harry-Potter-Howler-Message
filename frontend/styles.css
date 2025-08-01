@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000000;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+.howler-text-ui {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.howler-text-ui h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+textarea {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  resize: vertical;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(217, 220, 20);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+.howler {
+  text-align: center;
+}
+
+#howlerImage {
+  width: 200px;
+  animation: shakeSide 0.4s infinite alternate;
+}
+
+#howlerGif {
+  width: 250px;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@keyframes shakeSide {
+  0% { transform: translateX(-6px) rotate(-2deg); }
+  100% { transform: translateX(6px) rotate(2deg); }
+}
+
+.howler-img {
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+

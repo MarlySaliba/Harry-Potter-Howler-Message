@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Howler</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <!-- Top UI -->
+    <div class="howler-text-ui">
+      <h1>📣 Virtual Howler</h1>
+      <textarea id="howlerText" placeholder="Write your Howler message here..."></textarea>
+      <button id="sendBtn">Send Howler</button>
+    </div>
+
+    <!-- Animated Howler Section -->
+    <div id="howlerBox" class="howler hidden">
+    <!-- Static PNG shown while speaking -->
+    <img id="howlerImage" src="howler.png" class="howler-img" alt="Howler Image" />
+
+    <!-- GIF shown only after speaking -->
+    <img id="howlerGif" src="howler.gif" class="howler-img hidden" alt="Howler Animation" />
+      <p>🔴 The Howler is yelling!</p>
+    </div>
+  </main>
+
+  <!-- Sound Effects -->
+  <audio id="howlerOpen" src="howler_open.mp3" preload="auto"></audio>
+  <audio id="howlerClose1" src="howler_end1.mp3" preload="auto"></audio>
+  <audio id="howlerClose2" src="howler_end2.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
